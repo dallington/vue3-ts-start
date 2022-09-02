@@ -46,7 +46,7 @@ function buildNewComponent(plop) {
       }
 
       function componentName() {
-        return '{{lowerCase componentName}}'
+        return '{{pascalCase componentName}}'
       }
 
       const actions = [
