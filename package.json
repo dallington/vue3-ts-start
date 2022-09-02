@@ -1,0 +1,74 @@
+{
+  "name": "vue3-ts-start",
+  "version": "v1.1.0",
+  "license": "MIT",
+  "author": "Dallington Augusto <dallington.augusto@gmail.com>",
+  "scripts": {
+    "build": "vue-tsc --noEmit && vite build",
+    "build-storybook": "build-storybook",
+    "coverage": "vitest --coverage",
+    "dev": "vite",
+    "generate": "plop",
+    "lint": "eslint . --fix",
+    "preview": "vite preview --port 5050",
+    "storybook": "start-storybook -p 6006",
+    "test": "vitest",
+    "typecheck": "vue-tsc --noEmit",
+    "hi": "node",
+    "prepare": "husky install", 
+    "commit" : "git-cz"
+  },
+  "resolutions": {
+    "@types/react": "https://registry.yarnpkg.com/@favware/skip-dependency/-/skip-dependency-1.1.1.tgz"
+  },
+  "dependencies": {
+    "pinia": "^2.0.6",
+    "vue": "^3.2.26",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@fazulk/testing-vue3": "^0.0.3",
+    "@storybook/addon-actions": "^6.4.14",
+    "@storybook/addon-essentials": "^6.4.14",
+    "@storybook/addon-interactions": "^6.4.14",
+    "@storybook/addon-links": "^6.4.14",
+    "@storybook/jest": "^0.0.5",
+    "@storybook/testing-library": "^0.0.7",
+    "@storybook/vue3": "^6.4.14",
+    "@testing-library/vue": "^6.4.2",
+    "@types/node": "^16.11.12",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "@vitejs/plugin-vue": "^2.0.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
+    "@vue/test-utils": "^2.0.0-rc.17",
+    "c8": "^7.11.0",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-storybook": "^0.5.3",
+    "eslint-plugin-vue": "^8.2.0",
+    "happy-dom": "^2.25.1",
+    "husky": "^8.0.1",
+    "plop": "^3.0.5",
+    "prettier": "^2.5.1",
+    "storybook-builder-vite": "^0.1.13",
+    "typescript": "^4.5.4",
+    "vite": "^2.7.13",
+    "vite-plugin-pages": "^0.25.0",
+    "vite-plugin-vue-layouts": "^0.7.0",
+    "vite-plugin-windicss": "^1.8.7",
+    "vitest": "^0.2.3",
+    "vue-tsc": "^0.30.0",
+    "windicss": "^3.5.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
